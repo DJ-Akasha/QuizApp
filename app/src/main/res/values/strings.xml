@@ -1,0 +1,45 @@
+<resources>
+    <!-- Name of the app -->
+    <string name="app_name">Quiz App</string>
+
+    <!-- Question numbers -->
+    <string name="question_1">Question 1</string>
+    <string name="question_2">Question 2</string>
+    <string name="question_3">Question 3</string>
+    <string name="question_4">Question 4</string>
+    <string name="question_5">Question 5</string>
+    <string name="question_6">Question 6</string>
+
+    <!-- Question text -->
+    <string name="question_1_text">What data type is used for text?</string>
+    <string name="question_2_text">Which of these are log levels? [tick all that apply]</string>
+    <string name="question_3_text">When is void used?</string>
+    <string name="question_4_text">Private methods can only be called within the activity they are in.</string>
+    <string name="question_5_text">Which of the following are variables? [tick all that apply]</string>
+    <string name="question_6_text">Which method gets called when the activity is being created?</string>
+
+    <!--Answers to question 2-->
+    <string name="q2_error_correct">error</string>
+    <string name="q2_chat_incorrect">chat</string>
+    <string name="q2_warning_correct">warning</string>
+    <string name="q2_info_incorrect">info</string>
+
+    <!--Answers to question 3-->
+    <string name="q3_correct">Void is used in a method that has no return value.</string>
+    <string name="q3_incorrect">Void is used to determine the validity of a method.</string>
+
+    <!--Answers to question 4-->
+    <string name="q4_correct">True</string>
+    <string name="q4_incorrect">False</string>
+
+    <!--Answers to question 5-->
+    <string name="q5_local_correct">Local</string>
+    <string name="q5_national_incorrect">National</string>
+    <string name="q5_global_correct">Global</string>
+    <string name="q5_international_incorrect">International</string>
+
+    <!-- Buttons-->
+    <string name="submit_button">Submit Answers</string>
+    <string name="reset_button">Reset</string>
+
+</resources>
