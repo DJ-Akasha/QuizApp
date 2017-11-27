@@ -41,25 +41,25 @@ public class MainActivity extends AppCompatActivity {
         // Initialise the views so findViewById is only used here and can be
         // called upon in other places within the code. Apparently this is better
         // use of resources/memory.
-        question1 = (TextView) findViewById(R.id.answer_q1);
+        question1 = findViewById(R.id.answer_q1);
 
-        question2a = (CheckBox) findViewById(R.id.answer_error);
-        question2b = (CheckBox) findViewById(R.id.answer_chat);
-        question2c = (CheckBox) findViewById(R.id.answer_warning);
-        question2d = (CheckBox) findViewById(R.id.answer_info);
+        question2a = findViewById(R.id.answer_error);
+        question2b = findViewById(R.id.answer_chat);
+        question2c = findViewById(R.id.answer_warning);
+        question2d = findViewById(R.id.answer_info);
 
-        question3 = (RadioButton) findViewById(R.id.void_correct);
-        radioGroup3 = (RadioGroup) findViewById(R.id.radio_group_q3);
+        question3 = findViewById(R.id.void_correct);
+        radioGroup3 = findViewById(R.id.radio_group_q3);
 
-        question4 = (RadioButton) findViewById(R.id.answer_true);
-        radioGroup4 = (RadioGroup) findViewById(R.id.radio_group_q4);
+        question4 = findViewById(R.id.answer_true);
+        radioGroup4 = findViewById(R.id.radio_group_q4);
 
-        question5a = (CheckBox) findViewById(R.id.answer_local);
-        question5b = (CheckBox) findViewById(R.id.answer_national);
-        question5c = (CheckBox) findViewById(R.id.answer_global);
-        question5d = (CheckBox) findViewById(R.id.answer_international);
+        question5a = findViewById(R.id.answer_local);
+        question5b = findViewById(R.id.answer_national);
+        question5c = findViewById(R.id.answer_global);
+        question5d = findViewById(R.id.answer_international);
 
-        question6 = (TextView) findViewById(R.id.answer_q6);
+        question6 = findViewById(R.id.answer_q6);
     }
 
     private int getTotalScore() {
@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     // This method is called when the submitButton is clicked.
     // It produces a Toast message with the user's total score.
     public void submitButton(View view) {
-        Toast.makeText(this, "Your final score is " + getTotalScore(), Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.toast_message) + getTotalScore(), Toast.LENGTH_LONG).show();
     }
 
     // This method is called when the resetButton is clicked.

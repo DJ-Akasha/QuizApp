@@ -42,4 +42,7 @@
     <string name="submit_button">Submit Answers</string>
     <string name="reset_button">Reset</string>
 
+    <!--Toast message, \u0020 leaves a gap otherwise the msg would say ...is6 instead of ...is 6-->
+    <string name="toast_message">Your final score is\u0020</string>
+
 </resources>
