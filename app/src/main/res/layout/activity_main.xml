@@ -49,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
+
         </LinearLayout>
 
         <!--Question 2 Layout-->

@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Check the answer to Question 1
         String q1Answer = question1.getText().toString();
-        if (q1Answer.equals("String")) {
+        if (q1Answer.equals("String") || q1Answer.equals("String ")) {
             score += 1;
         } else {
         }
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Check the answer to Question 6.
         String q6Answer = question6.getText().toString();
-        if (q6Answer.equals("onCreate")) {
+        if (q6Answer.equals("onCreate") || q1Answer.equals("onCreate ")) {
             score += 1;
         } else {
         }
