@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,24 +11,24 @@
         android:layout_height="match_parent"
         android:background="@color/backgroundColor"
         android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp">
+        android:paddingBottom="@dimen/layout_padding"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:paddingTop="@dimen/layout_padding">
 
         <!--Question 1 layout-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/layout_padding"
             android:background="@drawable/shape"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="@dimen/layout_small_padding">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:src="@drawable/android_logo_png20_right" />
 
             <TextView
@@ -49,25 +48,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
-
         </LinearLayout>
 
         <!--Question 2 Layout-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/layout_padding"
             android:background="@drawable/shape"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="@dimen/layout_small_padding">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="left"
+                android:layout_gravity="start"
                 android:scaleX="-1"
                 android:src="@drawable/android_logo_png20_right" />
-
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -125,15 +122,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/layout_padding"
             android:background="@drawable/shape"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="@dimen/layout_small_padding">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:src="@drawable/android_logo_png20_right" />
 
             <TextView
@@ -155,16 +152,16 @@
                 android:orientation="vertical">
 
                 <RadioButton
-                    android:id="@+id/void_correct"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q3_correct" />
-
-                <RadioButton
                     android:id="@+id/void_incorrect"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/q3_incorrect" />
+
+                <RadioButton
+                    android:id="@+id/void_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q3_correct" />
             </RadioGroup>
         </LinearLayout>
 
@@ -172,20 +169,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/layout_padding"
             android:background="@drawable/shape"
             android:orientation="vertical"
-            android:padding="5dp"
-            android:paddingBottom="16dp"
-            android:paddingTop="16dp">
+            android:padding="@dimen/layout_small_padding"
+            android:paddingBottom="@dimen/layout_padding"
+            android:paddingTop="@dimen/layout_padding">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="left"
+                android:layout_gravity="start"
                 android:scaleX="-1"
                 android:src="@drawable/android_logo_png20_right" />
-
 
             <TextView
                 android:id="@+id/q_4"
@@ -219,24 +215,23 @@
                     android:layout_height="wrap_content"
                     android:text="@string/q4_incorrect" />
             </RadioGroup>
-
         </LinearLayout>
 
         <!--Question 5 Layout-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/layout_padding"
             android:background="@drawable/shape"
             android:orientation="vertical"
-            android:padding="5dp"
-            android:paddingBottom="16dp"
-            android:paddingTop="16dp">
+            android:padding="@dimen/layout_small_padding"
+            android:paddingBottom="@dimen/layout_padding"
+            android:paddingTop="@dimen/layout_padding">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="right"
+                android:layout_gravity="end"
                 android:src="@drawable/android_logo_png20_right" />
 
             <RelativeLayout
@@ -295,15 +290,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/layout_padding"
             android:background="@drawable/shape"
             android:orientation="vertical"
-            android:padding="5dp">
+            android:padding="@dimen/layout_small_padding">
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_gravity="left"
+                android:layout_gravity="start"
                 android:scaleX="-1"
                 android:src="@drawable/android_logo_png20_right" />
 
@@ -321,6 +316,155 @@
 
             <EditText
                 android:id="@+id/answer_q6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!--Question 7 layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:background="@drawable/shape"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_small_padding">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:src="@drawable/android_logo_png20_right" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_7" />
+
+            <TextView
+                style="@style/Questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_7_text" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_q7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/concotenation_incorrect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q7_incorrect" />
+
+                <RadioButton
+                    android:id="@+id/concotenation_correct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/q7_correct" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!--Question 8 Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:background="@drawable/shape"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_small_padding">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:scaleX="-1"
+                android:src="@drawable/android_logo_png20_right" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/q_8"
+                    style="@style/HeaderTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question_8" />
+
+                <TextView
+                    android:id="@+id/question_8"
+                    style="@style/Questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/q_8"
+                    android:text="@string/question_8_text" />
+
+                <CheckBox
+                    android:id="@+id/answer_else"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_8"
+                    android:text="@string/q8_else_correct" />
+
+                <CheckBox
+                    android:id="@+id/answer_native"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_8"
+                    android:layout_toRightOf="@id/answer_else"
+                    android:text="@string/q8_native_correct" />
+
+                <CheckBox
+                    android:id="@+id/answer_int"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_8"
+                    android:layout_toRightOf="@id/answer_native"
+                    android:text="@string/q8_int_correct" />
+
+                <CheckBox
+                    android:id="@+id/answer_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/question_8"
+                    android:layout_toRightOf="@id/answer_int"
+                    android:text="@string/q8_return_correct" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!--Question 9 Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/layout_padding"
+            android:background="@drawable/shape"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_small_padding">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:src="@drawable/android_logo_png20_right" />
+
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_9" />
+
+            <TextView
+                style="@style/Questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_9_text" />
+
+            <EditText
+                android:id="@+id/answer_q9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text" />
@@ -344,7 +488,6 @@
             android:onClick="resetButton"
             android:text="@string/reset_button"
             android:textColor="#FFFFFF" />
-
     </LinearLayout>
 
 </ScrollView>

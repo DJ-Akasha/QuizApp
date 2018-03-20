@@ -9,6 +9,9 @@
     <string name="question_4">Question 4</string>
     <string name="question_5">Question 5</string>
     <string name="question_6">Question 6</string>
+    <string name="question_7">Question 7</string>
+    <string name="question_8">Question 8</string>
+    <string name="question_9">Question 9</string>
 
     <!-- Question text -->
     <string name="question_1_text">What data type is used for text?</string>
@@ -17,6 +20,9 @@
     <string name="question_4_text">Private methods can only be called within the activity they are in.</string>
     <string name="question_5_text">Which of the following are variables? [tick all that apply]</string>
     <string name="question_6_text">Which method gets called when the activity is being created?</string>
+    <string name="question_7_text">What does String Concatenation mean?</string>
+    <string name="question_8_text">Which of the following are Java Keywords? [tick all that apply]</string>
+    <string name="question_9_text">If == means equal to then which is correct to mean not equal to?</string>
 
     <!--Answers to question 2-->
     <string name="q2_error_correct">error</string>
@@ -37,6 +43,16 @@
     <string name="q5_national_incorrect">National</string>
     <string name="q5_global_correct">Global</string>
     <string name="q5_international_incorrect">International</string>
+
+    <!--Answers to question 7-->
+    <string name="q7_correct">When you need to put together several strings.</string>
+    <string name="q7_incorrect">When you need to stop the strings from unravelling.</string>
+
+    <!--Answers to question 8-->
+    <string name="q8_else_correct">else</string>
+    <string name="q8_native_correct">native</string>
+    <string name="q8_int_correct">int</string>
+    <string name="q8_return_correct">return</string>
 
     <!-- Buttons-->
     <string name="submit_button">Submit Answers</string>
