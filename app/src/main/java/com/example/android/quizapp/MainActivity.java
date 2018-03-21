@@ -55,9 +55,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Initialise the views so findViewById is only used here and can be
-        // called upon in other places within the code. Apparently this is better
-        // use of resources/memory. Found on stackOverflow - https://stackoverflow.com/questions/32159239/android-what-is-best-practice-for-declaring-view-components-in-an-activity
-        // author Hussein El Feky, date 22 August 2015.
+        // called upon in other places within the code. Apparently this is better for memory resources.
         question1 = findViewById(R.id.answer_q1);
 
         question2a = findViewById(R.id.answer_error);
@@ -114,44 +112,34 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        //Check the answer to Question 4 - found on stackOverflow - https://stackoverflow.com/questions/11050074/how-to-check-if-radiobutton-is-checked
-        // author FabianCook, date 15 June 2012.
+        //Check the answer to Question 4
         if (question4.isChecked()) {
             score += 1;
         }
 
-        //Check the answer to Question 5 - found on stackOverflow and dotNetPerls - https://stackoverflow.com/questions/18336151/how-to-check-if-android-checkbox-is-checked-within-its-onclick-method-declared/31448205
-        // author Anand, date 20 August 2013.
-        // - https://www.dotnetperls.com/if-java
-        // author Unknown, date Unknown. Learned about how to use && and || and learned that ! is important so I looked it up and found that it could be used here.
+        //Check the answer to Question 5
         if (question5a.isChecked() && !question5b.isChecked() && question5c.isChecked() && !question5d.isChecked()) {
             score += 1;
         }
 
-        //Check the answer to Question 6 - found on stackOverflow - https://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java
-        // author Aaron Maenpaa, date last edit 11 December 2017.
+        //Check the answer to Question 6
         String q6Answer = question6.getText().toString();
         if (q6Answer.equals("onCreate") || q6Answer.equals("onCreate ")) {
             score += 1;
         } else {
         }
 
-        //Check the answer to Question 7 - found on stackOverflow - https://stackoverflow.com/questions/11050074/how-to-check-if-radiobutton-is-checked
-        // author FabianCook, date 15 June 2012.
+        //Check the answer to Question 7
         if (question7.isChecked()) {
             score += 1;
         }
 
-        //Check the answer to Question 8 - found on stackOverflow and dotNetPerls - https://stackoverflow.com/questions/18336151/how-to-check-if-android-checkbox-is-checked-within-its-onclick-method-declared/31448205
-        // author Anand, date 20 August 2013.
-        // - https://www.dotnetperls.com/if-java
-        // author Unknown, date Unknown. Learned about how to use && and || and learned that ! is important so I looked it up and found that it could be used here.
+        //Check the answer to Question 8
         if (question8a.isChecked() && question8b.isChecked() && question8c.isChecked() && question8d.isChecked()) {
             score += 1;
         }
 
-        //Check the answer to Question 9 - found on stackOverflow - https://stackoverflow.com/questions/513832/how-do-i-compare-strings-in-java
-        // author Aaron Maenpaa, date last edit 11 December 2017.
+        //Check the answer to Question 9
         String q9Answer = question9.getText().toString();
         if (q9Answer.equals("!=") || q9Answer.equals("!= ") || q9Answer.equals("! =") || q9Answer.equals("! = ")) {
             score += 1;
@@ -167,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, getString(R.string.toast_message) + getTotalScore(), Toast.LENGTH_LONG).show();
     }
 
-    // This method is called when the resetButton is clicked. - found on stackOverflow
+    // This method is called when the resetButton is clicked.
     // It resets all answers to clear/blank.
     public void resetButton(View view) {
         // Found on stackOverflow - https://stackoverflow.com/questions/11102114/how-to-clear-a-string
@@ -185,34 +173,22 @@ public class MainActivity extends AppCompatActivity {
         // author spaaarky21, date 7 March 2014
         radioGroup3.clearCheck();
 
-        // Found on stackOverflow - https://stackoverflow.com/questions/15836789/android-radio-button-uncheck
-        // author spaaarky21, date 7 March 2014
         radioGroup4.clearCheck();
 
-        // Found on stackOverflow - https://stackoverflow.com/questions/37410145/how-to-unchecked-the-checked-checkbox
-        // author Malith Lakshan, date 24 May 2016.
         question5a.setChecked(false);
         question5b.setChecked(false);
         question5c.setChecked(false);
         question5d.setChecked(false);
 
-        // Found on stackOverflow - https://stackoverflow.com/questions/11102114/how-to-clear-a-string
-        // author Stephen C, date 19 June 2012.
         question6.setText("");
 
-        // Found on stackOverflow - https://stackoverflow.com/questions/15836789/android-radio-button-uncheck
-        // author spaaarky21, date 7 March 2014
         radioGroup7.clearCheck();
 
-        // Found on stackOverflow - https://stackoverflow.com/questions/37410145/how-to-unchecked-the-checked-checkbox
-        // author Malith Lakshan, date 24 May 2016.
         question8a.setChecked(false);
         question8b.setChecked(false);
         question8c.setChecked(false);
         question8d.setChecked(false);
 
-        // Found on stackOverflow - https://stackoverflow.com/questions/11102114/how-to-clear-a-string
-        // author Stephen C, date 19 June 2012.
         question9.setText("");
     }
 
